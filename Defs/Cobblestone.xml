@@ -1,0 +1,214 @@
+<Defs>
+
+<ThingDef ParentName="StoneBlocksBase">
+	<defName>Sihv_BlocksCobblestone</defName>
+	<label>cobblestone blocks</label>
+	<description>Blocks of mixed stone, called cobblestonestone.</description>
+	<graphicData>
+		<color>(96,96,96)</color>
+	</graphicData>
+	<statBases>
+		<MarketValue>1</MarketValue>
+		<Mass>1</Mass>
+ 		<SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+	</statBases>
+	<stuffProps>
+		<color>(96,96,96)</color>
+		<soundImpactStuff>BulletImpactGround</soundImpactStuff>
+		<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+		<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		<stuffAdjective>cobblestone</stuffAdjective>
+		<statFactors>
+			<Beauty>0.9</Beauty>  
+  			<MarketValue>0.4</MarketValue>
+			<MaxHitPoints>1.1</MaxHitPoints>
+			<WorkToBuild>4.0</WorkToBuild>
+			<WorkToMake>1.1</WorkToMake>
+		</statFactors>
+	</stuffProps>
+</ThingDef>
+
+<ThingDef ParentName="StoneBlocksBase">
+	<defName>Sihv_BlocksReinforcedCobblestone</defName>
+	<label>reinforced cobblestone blocks</label>
+	<description>Blocks of mixed stone, called cobblestonestone, reinforced with steel for extra durability.</description>
+	<graphicData>
+		<color>(100,100,100)</color>
+	</graphicData>
+	<statBases>
+		<MarketValue>1.8</MarketValue>
+		<Mass>1.1</Mass>
+ 		<SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+	</statBases>
+	<stuffProps>
+		<color>(100,100,100)</color>
+		<soundImpactStuff>BulletImpactGround</soundImpactStuff>
+		<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+		<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		<stuffAdjective>reinforced cobblestone</stuffAdjective>
+		<statFactors>
+			<Beauty>1.1</Beauty>  
+  			<MarketValue>0.4</MarketValue>
+			<MaxHitPoints>1.7</MaxHitPoints>
+			<WorkToBuild>5.5</WorkToBuild>
+			<WorkToMake>1.2</WorkToMake>
+		</statFactors>
+	</stuffProps>
+</ThingDef>
+
+<RecipeDef ParentName="MakeStoneBlocksBase">
+	<defName>Sihv_MakeStoneBlocksCobblestone</defName>
+	<label>make cobblestone blocks</label>
+	<description>Combines various stone blocks into cobblestone blocks for mixed usage.</description>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>StoneBlocks</li>
+				</categories>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>StoneBlocks</li>
+		</categories>
+		<exceptedThingDefs>
+			<li>Sihv_BlocksReinforcedCobblestone</li>
+		</exceptedThingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>StoneBlocks</li>
+		</categories>
+		<exceptedThingDefs>
+			<li>Sihv_BlocksCobblestone</li>
+		</exceptedThingDefs>
+	</defaultIngredientFilter>
+	<products>
+		<Sihv_BlocksCobblestone>5</Sihv_BlocksCobblestone>
+	</products>
+	<targetCountAdjustment>5</targetCountAdjustment>
+	<workAmount>100</workAmount>
+</RecipeDef>
+
+<RecipeDef ParentName="MakeStoneBlocksBase">
+	<defName>Sihv_MakeStoneBlocksCobblestoneTwenty</defName>
+	<label>make cobblestone blocks (x20)</label>
+	<description>Combines various stone blocks into cobblestone blocks for mixed usage.</description>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>StoneBlocks</li>
+				</categories>
+				<exceptedThingDefs>
+					<li>Sihv_BlocksCobblestone</li>
+					<li>Sihv_BlocksReinforcedCobblestone</li>
+				</exceptedThingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>StoneBlocks</li>
+		</categories>
+		<exceptedThingDefs>
+			<li>Sihv_BlocksReinforcedCobblestone</li>
+		</exceptedThingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>StoneBlocks</li>
+		</categories>
+		<exceptedThingDefs>
+			<li>Sihv_BlocksCobblestone</li>
+		</exceptedThingDefs>
+	</defaultIngredientFilter>
+	<products>
+		<Sihv_BlocksCobblestone>20</Sihv_BlocksCobblestone>
+	</products>
+	<workAmount>200</workAmount>
+</RecipeDef>
+
+<RecipeDef ParentName="MakeStoneBlocksBase">
+	<defName>Sihv_MakeStoneBlocksCobblestoneHundred</defName>
+	<label>make cobblestone blocks (x100)</label>
+	<description>Combines various stone blocks into cobblestone blocks for mixed usage.</description>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>StoneBlocks</li>
+				</categories>
+				<exceptedThingDefs>
+					<li>Sihv_BlocksCobblestone</li>
+					<li>Sihv_BlocksReinforcedCobblestone</li>
+				</exceptedThingDefs>
+			</filter>
+			<count>100</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>StoneBlocks</li>
+		</categories>
+		<exceptedThingDefs>
+			<li>Sihv_BlocksReinforcedCobblestone</li>
+		</exceptedThingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>StoneBlocks</li>
+		</categories>
+		<exceptedThingDefs>
+			<li>Sihv_BlocksCobblestone</li>
+		</exceptedThingDefs>
+	</defaultIngredientFilter>
+	<products>
+		<Sihv_BlocksCobblestone>100</Sihv_BlocksCobblestone>
+	</products>
+	<targetCountAdjustment>100</targetCountAdjustment>
+	<workAmount>400</workAmount>
+</RecipeDef>
+
+<RecipeDef ParentName="MakeStoneBlocksBase">
+	<defName>Sihv_MakeStoneBlocksReinforcedCobblestone</defName>
+	<label>make reinforced cobblestone blocks</label>
+	<description>Reinforce cobblestone blocks with steel for extra durability.</description>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Sihv_BlocksCobblestone</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Sihv_BlocksCobblestone</li>
+			<li>Steel</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<Sihv_BlocksReinforcedCobblestone>25</Sihv_BlocksReinforcedCobblestone>
+	</products>
+	<workAmount>800</workAmount>
+</RecipeDef>
+
+</Defs>

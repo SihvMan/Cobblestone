@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>Cobblestone</name>
+<author>Sihv</author>
+<url></url>
+<targetVersion>0.18.0</targetVersion>
+<description>
+    Adds a mixed stone type called cobblestone, so you can use those varied stone chunks around your base.
+</description>
+</ModMetaData>
